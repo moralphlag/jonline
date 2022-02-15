@@ -10,9 +10,11 @@ public class Application_1 {
 			BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 			
 			System.out.print("Enter a, b, c: ");
-			Double a = Double.parseDouble(in.readLine());
-			Double b = Double.parseDouble(in.readLine());
-			Double c = Double.parseDouble(in.readLine());
+			String[] values = in.readLine().split(" ");
+			
+			Double a = Double.parseDouble(values[0]);
+			Double b = Double.parseDouble(values[1]);
+			Double c = Double.parseDouble(values[2]);
 			
 			Double z = ((a - 3) * b / 2) + c;
 			
